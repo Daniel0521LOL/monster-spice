@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "monster-spice",
+  "version": "${version}",
+  "name": "Monster Spice",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/monster-spice/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "charcruncher.mobspice.client.MonsterSpiceDataGenerator"
+    ],
+    "client": [
+      "charcruncher.mobspice.client.MonsterSpiceClient"
+    ],
+    "main": [
+      "charcruncher.mobspice.MonsterSpice"
+    ]
+  },
+  "mixins": [
+    "monster-spice.mixins.json",
+    {
+      "config": "monster-spice.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "monster-spice:block/glowing_embers",
+    "glowing_embers": "monster-spice:block/glowing_embers"
+  },
+  "elements": [
+    {
+      "from": [ 0, 0, 0.1 ],
+      "to": [ 16, 16, 0.1 ],
+      "faces": {
+        "north": { "uv": [ 16, 0, 0, 16 ], "texture": "#glowing_embers" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#glowing_embers" }
+      }
+    }
+  ]
+}
