@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "charcruncher.monsterspice.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EntityNbtDataMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}
